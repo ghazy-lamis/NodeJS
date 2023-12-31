@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App Home</title>
+    <style>
+       /* Navigation Bar Styles */
+nav {
+    background-color: #008cba; /* A soft blue shade */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #f0f0f0; /* Light grey for contrast */
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0072a4; /* Slightly darker blue on hover */
+}
+
+/* Body and Content Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto for a modern look */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/todo/create">Create Todo</a>
+        <a href="/todos">View Todos</a>
+        <a href="/about">About</a>
+    </nav>
+    <div class="content">
+        <h1>Welcome to the Todo App</h1>
+        <p>Manage your tasks efficiently and effectively.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my ToDos</title>
+    <style>
+      /* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* A clean, sans-serif font */
+    background-color: #e9ecef; /* A light, neutral background */
+    margin: 0;
+    padding: 20px;
+    display: block; /* Standard block layout */
+}
+
+/* Styling for Todo Creation Section */
+.create-Todo {
+    background-color: #fff; /* White background for contrast */
+    padding: 30px;
+    border-radius: 10px; /* Slightly larger border radius for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* A more pronounced shadow */
+    width: 350px; /* A bit wider for more space */
+    margin: auto; /* Centering the box */
+}
+
+h1 {
+    color: #007bff; /* A brighter blue for headers */
+    text-align: center;
+}
+
+/* Form Element Styles */
+form {
+    display: grid;
+    grid-gap: 10px; /* Using grid layout for form elements */
+}
+
+label {
+    margin-top: 0;
+    color: #495057; /* A darker grey for better readability */
+}
+
+input[type="text"],
+textarea,
+select {
+    padding: 12px;
+    border: 2px solid #ced4da; /* A slightly thicker border with a softer color */
+    border-radius: 5px; /* Smoother border radius */
+}
+
+button {
+    background-color: #007bff; /* Matching button color to the header */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3; /* A darker shade on hover for the button */
+}
+
+    </style>
+</head>
+<body>
+    <div class="create-Todo content">
+        <h1>Welcome to my ToDos</h1>
+        <form action="/todos" method="POST">
+            <label for="description">Todo Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="status">Todo Status:</label>
+            <select id="status" name="status" required>
+                <option value="incomplete">Incomplete</option>
+                <option value="complete">Complete</option>
+            </select>
+
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
